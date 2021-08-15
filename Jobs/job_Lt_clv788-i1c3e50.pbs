@@ -1,0 +1,28 @@
+ # Your job will use 1 node, 28 cores, and 168gb of memory total.
+#PBS -q standard
+#PBS -l select=1:ncpus=28:mem=224gb:np100s=1:os7=True
+### Specify a name for the job
+#PBS -N Lt_clv788-c3i150
+#PBS -m bea
+#PBS -M sitengchen@email.arizona.edu
+### Specify the group name
+#PBS -W group_list=meilingw
+### Used if job requires partial node only
+#PBS -l place=pack:shared
+### CPUtime required in hhh:mm:ss.
+### Leading 0's can be omitted e.g 48:0:0 sets 48 hours
+#PBS -l cput=1400:00:00
+### Walltime is how long your job will run
+#PBS -l walltime=50:00:00
+#PBS -e /home/u3/sitengchen/Lineage/logs/Lt_clv788-c3i1-50_error.txt
+#PBS -o /home/u3/sitengchen/Lineage/logs/Lt_clv788-c3i1-50_output.txt
+
+module load singularity
+
+cd /home/u3/sitengchen/Lineage/
+nvidia-smi
+date
+
+singularity exec --nv --bind /groups/meilingw/ /groups/meilingw/sitengchen/dataset/ctk_gpu_stable.img python3.5 multi_task_training.py convlstm_v788 -c 3 -epoch 50
+
+date

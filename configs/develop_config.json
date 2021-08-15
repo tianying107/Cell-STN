@@ -1,0 +1,101 @@
+{
+    "production": "develop",
+    "version": "0.5.1",
+    "raw_image_path": "/Users/stn/Desktop/MCF7_Raw_Images/",
+    "temp_image_path": "./temp/",
+    "annotation_path": "./Annotations/",
+    "evaluation_path": "./Evaluations/",
+    "cell_types": ["HCT116", "HeLa", "MCF7"],
+    "HCT116": {
+        "cell_type": "HCT116",
+        "channels_name": ["Brightfield Camera", "CFP", "YFP"],
+        "validation_sets": ["78"],
+        "experiments": [
+            {
+                "id": "76",
+                "channels": 3,
+                "frames": 190,
+                "rows": 1024,
+                "cols": 1024
+            },
+            {
+                "id": "78",
+                "channels": 3,
+                "frames": 190,
+                "rows": 1024,
+                "cols": 1024
+            }
+        ],
+        "evaluation_settings": {
+            "sampling_size": 64,
+            "seed": 42
+        },
+        "multitask_evaluation_settings": {
+            "sampling_size": 4,
+            "seed": 42
+        }
+    },
+    "HeLa": {
+        "cell_type": "HeLa",
+        "channels_name": ["N2DL"],
+        "validation_sets": ["01"],
+        "experiments": [
+            {
+                "id": "01",
+                "channels": 1,
+                "frames": 30,
+                "rows": 700,
+                "cols": 1100
+            },
+            {
+                "id": "02",
+                "channels": 1,
+                "frames": 30,
+                "rows": 700,
+                "cols": 1100
+            }
+        ],
+        "evaluation_settings": {
+            "sampling_size": 64,
+            "seed": 42
+        },
+        "multitask_evaluation_settings": {
+            "sampling_size": 4,
+            "seed": 42
+        }
+    },
+    "MCF7": {
+        "cell_type": "MCF7",
+        "channels_name": [
+            "c1",
+            "c2",
+            "c3"
+        ],
+        "validation_sets": ["02"],
+        "experiments": [
+            {
+                "id": "01",
+                "channels": 3,
+                "frames": 30,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "02",
+                "channels": 3,
+                "frames": 30,
+                "rows": 1022,
+                "cols": 1024
+            }
+        ],
+        "evaluation_settings": {
+            "sampling_size": 64,
+            "seed": 42
+        },
+        "multitask_evaluation_settings": {
+            "sampling_size": 4,
+            "seed": 42
+        }
+    }
+
+}

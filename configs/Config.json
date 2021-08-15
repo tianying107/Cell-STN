@@ -1,0 +1,358 @@
+{
+    "production": "deploy",
+    "version": "0.6.1",
+    "raw_image_path": "/groups/meilingw/sitengchen/dataset/Cell/",
+    "temp_image_path": "/xdisk/aoli1/sitengchen/temp/",
+    "annotation_path": "./Annotations/",
+    "evaluation_path": "/xdisk/aoli1/sitengchen/Evaluations/",
+    "cell_types": ["HCT116", "HeLa", "U2OS", "MCF7"],
+    "HCT116": {
+        "cell_type": "HCT116",
+        "channels_name": ["Brightfield", "CFP", "YFP"],
+        "validation_sets": ["78"],
+        "experiments": [
+            {
+                "id": "76",
+                "channels": 3,
+                "frames": 243,
+                "rows": 1024,
+                "cols": 1024
+            },
+            {
+                "id": "78",
+                "channels": 3,
+                "frames": 243,
+                "rows": 1024,
+                "cols": 1024
+            },
+            {
+                "id": "79",
+                "channels": 3,
+                "frames": 243,
+                "rows": 1024,
+                "cols": 1024
+            },
+            {
+                "id": "86",
+                "channels": 3,
+                "frames": 243,
+                "rows": 1024,
+                "cols": 1024
+            }
+        ],
+        "evaluation_settings": {
+            "sampling_size": 2000,
+            "seed": 42
+        },
+        "multitask_evaluation_settings": {
+            "sampling_size": 2000,
+            "seed": 42
+        }
+    },
+    "HeLa": {
+        "cell_type": "HeLa",
+        "channels_name": ["N2DL"],
+        "mask_path": "/groups/meilingw/sitengchen/dataset/Cell/HeLa/masks/",
+        "validation_sets": ["02"],
+        "experiments": [
+            {
+                "id": "01",
+                "channels": 1,
+                "frames": 92,
+                "rows": 700,
+                "cols": 1100
+            },
+            {
+                "id": "02",
+                "channels": 1,
+                "frames": 92,
+                "rows": 700,
+                "cols": 1100
+            }
+        ],
+        "evaluation_settings": {
+            "sampling_size": 2000,
+            "seed": 42
+        },
+        "multitask_evaluation_settings": {
+            "sampling_size": 2000,
+            "seed": 42
+        }
+    },
+    "U2OS": {
+        "cell_type": "U2OS",
+        "channels_name": [
+            "c1",
+            "c2",
+            "c3"
+        ],
+        "validation_sets": ["02"],
+        "experiments": [
+            {
+                "id": "01",
+                "channels": 3,
+                "frames": 301,
+                "rows": 1024,
+                "cols": 1024
+            },
+            {
+                "id": "02",
+                "channels": 3,
+                "frames": 301,
+                "rows": 1024,
+                "cols": 1024
+            },
+            {
+                "id": "03",
+                "channels": 3,
+                "frames": 301,
+                "rows": 1024,
+                "cols": 1024
+            },
+            {
+                "id": "04",
+                "channels": 3,
+                "frames": 301,
+                "rows": 1024,
+                "cols": 1024
+            }
+        ],
+        "evaluation_settings": {
+            "sampling_size": 2000,
+            "seed": 42
+        },
+        "multitask_evaluation_settings": {
+            "sampling_size": 2000,
+            "seed": 42
+        }
+    },
+    "MCF7": {
+        "cell_type": "MCF7",
+        "channels_name": [
+            "c1",
+            "c2",
+            "c3"
+        ],
+        "validation_sets": ["02", "102", "42"],
+        "experiments": [
+            {
+                "id": "01",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "02",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "03",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "04",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "05",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "06",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "07",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "08",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "09",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "10",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "41",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "42",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "43",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "44",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "45",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "46",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "47",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "48",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "49",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "50",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "101",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "102",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "103",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "104",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "105",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "106",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "107",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "108",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "109",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            },
+            {
+                "id": "110",
+                "channels": 3,
+                "frames": 145,
+                "rows": 1022,
+                "cols": 1024
+            }
+        ],
+        "evaluation_settings": {
+            "sampling_size": 2000,
+            "seed": 42
+        },
+        "multitask_evaluation_settings": {
+            "sampling_size": 2000,
+            "seed": 42
+        }
+    }
+}
